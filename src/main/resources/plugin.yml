@@ -1,20 +1,19 @@
-main: ${PACKAGE}.${NAME}
+main: de.dertoaster.ttespectatortp.TTESpectatorTPPlugin
 name: ${NAME}
 version: "${VERSION}"
 api-version: "1.21.1"
-author: AUTHOR
-description: DESCRIPTION
-commands:
-  ex:
-    description: Base command for EXAMPLE
-    usage: "For a list of commands, type /ex help"
-    aliases: example
+author: DerToaster
+description: Disables spectator mode AP and allows configuring a command to run instead
 permissions:
-  example.test:
-    description: DESCRIPTION
+  ttespectatortp.bypass:
+    description: Bypass the functionality of this plugin
+    default: OP
+  ttespectatortp.allowspectatortp:
+    description: Allows using spectator TP at all
     default: true
-  example.*:
+  ttespectatortp.*:
     description: Grants all other permissions
     default: false
     children:
-      example.test: true
+      ttespectatortp.bypass: true
+      ttespectatortp.allowspectatortp: true
