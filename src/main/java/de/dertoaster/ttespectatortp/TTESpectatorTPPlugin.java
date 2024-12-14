@@ -51,6 +51,8 @@ public class TTESpectatorTPPlugin extends JavaPlugin implements Listener {
         this.getConfig().options().copyDefaults(true);
         saveDefaultConfig();
         Settings.load(this.getConfig());
+
+        this.getServer().getPluginManager().registerEvents(this, this);
     }
 
     @EventHandler(
