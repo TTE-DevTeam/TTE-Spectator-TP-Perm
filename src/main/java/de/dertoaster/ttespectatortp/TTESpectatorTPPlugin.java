@@ -13,7 +13,6 @@ import org.bukkit.permissions.Permission;
 import org.bukkit.permissions.PermissionDefault;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
