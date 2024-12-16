@@ -44,9 +44,6 @@ public class TTESpectatorTPPlugin extends JavaPlugin implements Listener {
     public void onEnable() {
         PaperLib.suggestPaper(this);
 
-        this.getServer().getPluginManager().addPermission(new Permission(Permissions.CAN_SPECTATOR_TP, PermissionDefault.TRUE));
-        this.getServer().getPluginManager().addPermission(new Permission(Permissions.BYPASS, PermissionDefault.OP));
-
         this.getConfig().options().copyDefaults(true);
         saveDefaultConfig();
         Settings.load(this.getConfig());
